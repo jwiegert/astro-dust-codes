@@ -1,5 +1,7 @@
 # Readme: astro-dust-codes
 
+(Under construction and revision, this readme may not be up-to-date)
+
 This repository contains a collection of Python scripts used for my research on circumstellar dust. These scripts are primarily to create input data for radiative transfer simulations with [RADMC-3D](https://www.ita.uni-heidelberg.de/~dullemond/software/radmc-3d/) currently at v2.0 (a MC-based raytracing based radiative transfer simulation package written by C.P. Dullemond at Heidelberg), and for visualising input and analysing output spectra and images. Most often I use R3D for simulating SEDs at a wide wavelength range.
 
 Between 2011 and 2016, I mostly worked with dust of cirumstellar debris discs around sun-like stars, for these I used a restricted N-body simulation I wrote in C to create my dust models. Since 2018, my work has been on dust formed in the envelopes of AGB-star.

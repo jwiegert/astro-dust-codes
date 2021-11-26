@@ -9,10 +9,10 @@
 # The flaring is "square'ey" so, at each
 #      R = 2*gridsmaller/0.1 = 20.*gridsmaller
 # The disc doubles in height.
-#
+
+
 # ============================================================================ #
 # Import packages
-#
 import os
 import numpy as np
 import scipy as s
@@ -21,14 +21,14 @@ import matplotlib.pyplot as plt
 from matplotlib import rc
 rc('font',**{'family':'serif','serif':['serif']})
 rc('text', usetex=True)
-#
+
+
 # Import constants and properties.
-#
 from constants import *
 from inputdata import *
+
 # ============================================================================ #
 # Additional function(s)
-#
 def movecoordinates(nx,ny,nz):
     nx     += 1
     if nx  == nxyz:
@@ -39,11 +39,42 @@ def movecoordinates(nx,ny,nz):
         ny =  0
         nz += 1
     return nx,ny,nz
-#
+
 # ============================================================================ #
-#
+
 savegrid = input("Do you want to save the grid distances file? y/n: ")
 plotgrid = input("Do you want to plot the grid? y/n: ")
+
+
+# List of inputs
+# 
+# sphereratio
+# denspower (list with 2 elements, sphere and disc, radial power) defaults; [-2,-2]
+# totaldustmass
+# flareangle 
+#        (flaring in degrees, gives h(r) = discflare * r)
+#        (flare angle is angle from mid-plane to disc edge)
+#        (tan(flareangle) = 2*discflare )
+#        (discflare = 2. * np.tan(0.017453292519943295 * flareangle) )
+#        (0.0174... = np.pi/180)
+#        (h(r) = r * 2 * tan(flareangle) = r * discflare)
+
+
+# inradius (list with 2 elements, sphere and disc)
+# outradius (list with 2 elements, sphere and disc)
+# save grid distances? default Yes
+# plot the grid? default No
+
+
+# discmasscorr = beror på discradie och flaring
+
+
+
+
+#def create_envelope():
+
+
+
 #
 # Reminder concerning disc height:
 # h(r) = discwidth(r)*2

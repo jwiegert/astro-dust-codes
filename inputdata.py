@@ -136,7 +136,7 @@ totaldustmass     = 1.e-3 * 1.989e33 * spheremasscorr # Total mass in gram
 discflare         = 2.*0.17633     # 10deg; For discs, h(r) = discflare * r
 #discflare         = 2.*1.0         # 45deg; For discs, h(r) = discflare * r
 #
-# tan(flareangle) = 2.*discflare
+# tan(flareangle) = 0.5*discflare
 #  5 deg = 0.087489
 # 10 deg = 0.17633
 # 30 deg = 0.57735
